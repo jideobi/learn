@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TO-DO APP</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      background-image: url("image/td10.jpg");background-repeat: no-repeat; background-size: cover;
+      animation-name: todo ;
+      animation-duration: 20s;
+    }
+
+    @keyframes todo {
+      0% {background-image: url("image/td10.jpg"); background-repeat: no-repeat; background-size: cover;}
+      50% {background-image: url('image/td8.webp'); background-repeat: no-repeat; background-size: cover;}
+    }
+  </style>
+  <body>
+    <div class="intro">
+      <h1>WORK TO-DO</h1>
+    </div>
+    <div>
+      <p id="first">Enter into the input field to add items to your list.</p>
+      <p id="second">Click the item to mark as complete.</p>
+      <p id="third">Click "X" to remove the from the list.</p>
+    </div>
+    
+
+    <input id="userInput" type="text" maxlength="27" />
+    <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+    <div>
+      <ul>
+    <!-- <li>item 2</li> -->
+      </ul>
+    </div>
+  </body>
+  <script src="script/main.js"></script>
+</html>
